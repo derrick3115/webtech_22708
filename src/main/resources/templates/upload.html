@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/upload" method="POST" enctype="multipart/form-data">
+  <input type="file" name="file" />
+  <input type="submit" value="Upload" />
+</form>
+
+<a href="/download/filename.ext">Download File</a>
+<!--<a href="/display/filename.html">Display File</a>-->
+
+<img src="/display/image.jpg" alt="Image"><br />
+
+<!--<table>-->
+<!--    <thead>-->
+<!--    <tr>-->
+<!--        <th>Image</th>-->
+<!--        <th>Name</th>-->
+<!--    </tr>-->
+<!--    </thead>-->
+<!--    <tbody>-->
+<!--    <tr th:each="image : ${images}">-->
+<!--        <td>-->
+<!--            <img th:src="@{/display/image/{imageName}(imageName=${image.name})}" width="100" height="100" />-->
+<!--        </td>-->
+<!--        <td th:text="${image.name}"></td>-->
+<!--    </tr>-->
+<!--    </tbody>-->
+<!--</table>-->
+</body>
+</html>
